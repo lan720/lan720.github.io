@@ -1,3 +1,12 @@
+body {
+  cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur"), auto;
+}
+a {
+  cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071205091.cur"), auto !important;
+}
+::selection {
+  background: #8deeee;
+}
 .anchorjs-link {
   text-decoration: none !important;
   transition: opacity 0.2s ease-in-out;
