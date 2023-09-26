@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lan720.github.io/cover/vue.png">
 <meta property="article:published_time" content="2023-08-27T11:17:07.000Z">
-<meta property="article:modified_time" content="2023-09-26T07:16:13.683Z">
+<meta property="article:modified_time" content="2023-09-26T09:53:13.114Z">
 <meta property="article:author" content="lan720">
 <meta property="article:tag" content="前端">
 <meta property="article:tag" content="Vue3">
@@ -362,7 +362,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;el-input placeholder=&quot;请输入内容&quot;&gt;<br>    &lt;template #suffix&gt;<br>      &lt;img src=&quot;your-image-url&quot; alt=&quot;图片&quot;&gt;<br>    &lt;/template&gt;<br>  &lt;/el-input&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
 
 <hr>
-<p>div里包裹三个p设置div为flex布局，前两个p在一排，第三个p在第二排：如果你想在 <code>&lt;div&gt;</code> 中包裹三个 <code>&lt;p&gt;</code> 元素，并设置前两个 <code>&lt;p&gt;</code> 元素在一行显示，第三个 <code>&lt;p&gt;</code> 元素在第二行，可以通过使用 CSS 的 Flex 布局来实现。<template></p>
+<p>div里包裹三个p设置div为flex布局，前两个p在一排，第三个p在第二排：如果你想在 <code>&lt;div&gt;</code> 中包裹三个 <code>&lt;p&gt;</code> 元素，并设置前两个 <code>&lt;p&gt;</code> 元素在一行显示，第三个 <code>&lt;p&gt;</code> 元素在第二行，可以通过使用 CSS 的 Flex 布局来实现。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;div class=&quot;container&quot;&gt;<br>    &lt;p&gt;第一个段落&lt;/p&gt;<br>    &lt;p&gt;第二个段落&lt;/p&gt;<br>    &lt;p&gt;第三个段落&lt;/p&gt;<br>  &lt;/div&gt;<br>&lt;/template&gt;<br><br>&lt;style scoped&gt;<br>.container &#123;<br>  display: flex;<br>  flex-wrap: wrap;<br>&#125;<br><br>.container p &#123;<br>  width: 50%; /* 每个段落占据容器的一半宽度 */<br>&#125;<br><br>.container p:nth-child(3) &#123;<br>  width: 100%; /* 第三个段落占据整个容器宽度 */<br>&#125;<br>&lt;/style&gt;<br></code></pre></td></tr></table></figure>
 
 <p>通过将 <code>.container</code> 类的 <code>display</code> 属性设置为 <code>flex</code>，并设置 <code>flex-wrap</code> 属性为 <code>wrap</code>，可以让容器内的元素自动换行。</p>
@@ -391,7 +391,7 @@
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs css">:deep .el-tree&#123;<br>    <span class="hljs-selector-class">.el-tree-node__children</span>&#123;<br>        <span class="hljs-selector-class">.el-tree-node__content</span>&#123;<br>            <span class="hljs-attribute">margin-top</span>:<span class="hljs-number">10px</span>;<br>        &#125;<br>        .<span class="hljs-selector-class">.el-tree-node__children</span>&#123;<br>            <span class="hljs-attribute">padding-left</span>:<span class="hljs-number">10px</span>;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <hr>
-<p>要设置每个 <code>el-table-column</code> 的宽度占比，你可以使用 <code>width</code> 属性配合百分比来实现。<template></p>
+<p>要设置每个 <code>el-table-column</code> 的宽度占比，你可以使用 <code>width</code> 属性配合百分比来实现。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs vue">&lt;template&gt;<br>  &lt;el-table :data=&quot;tableData&quot; style=&quot;width: 100%&quot;&gt;<br>    &lt;el-table-column<br>      prop=&quot;name&quot;<br>      label=&quot;姓名&quot;<br>      min-width=&quot;20%&quot;<br>    &gt;&lt;/el-table-column&gt;<br>    &lt;el-table-column<br>      prop=&quot;age&quot;<br>      label=&quot;年龄&quot;<br>      min-width=&quot;10%&quot;<br>    &gt;&lt;/el-table-column&gt;<br>    &lt;el-table-column<br>      prop=&quot;gender&quot;<br>      label=&quot;性别&quot;<br>      min-width=&quot;15%&quot;<br>    &gt;&lt;/el-table-column&gt;<br>  &lt;/el-table&gt;<br>&lt;/template&gt;<br></code></pre></td></tr></table></figure>
 
 <p>设置el-table滚动：</p>
@@ -449,7 +449,7 @@
 <hr>
 <p>随机生成id：可以使用 UUID（Universally Unique Identifier）或 GUID（Globally Unique Identifier）。这些是用于生成全局唯一标识符的算法。在  中，可以使用第三方库 <code>uuid</code> 来生成 UUID。</p>
 <p>首先，确保你已经安装了 <code>uuid</code> 库。可以使用 npm 包管理器运行以下命令进行安装：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs git">npm install uuid<br></code></pre></td></tr></table></figure>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">npm install uuid<br></code></pre></td></tr></table></figure>
 
 <p>安装完成后，可以使用以下代码生成一个完全不重复的随机 ID：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-keyword">const</span> &#123; <span class="hljs-attr">v4</span>: uuidv4 &#125; = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;uuid&#x27;</span>);<br><br><span class="hljs-keyword">function</span> <span class="hljs-title function_">generateUniqueId</span>(<span class="hljs-params"></span>) &#123;<br>  <span class="hljs-keyword">const</span> uniqueId = <span class="hljs-title function_">uuidv4</span>();<br>  <span class="hljs-keyword">return</span> uniqueId;<br>&#125;<br><br><span class="hljs-keyword">const</span> id = <span class="hljs-title function_">generateUniqueId</span>();<br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(id);<br></code></pre></td></tr></table></figure>
@@ -735,22 +735,7 @@
 
 
 
-<script type="text/javascript" src="/source/js/mouse.js"></script>
-<script type="text/javascript" src="/source/codeBlock/codeBlockFuction.js"></script>
-<!-- 代码语言 -->
-<script type="text/javascript" src="/source/codeBlock/codeLang.js"></script>
-<!-- 代码块复制 -->
-<script type="text/javascript" src="/source/codeBlock/codeCopy.js"></script>
-<script type="text/javascript" src="/source/codeBlock/clipboard.min.js"></script>
-<!-- 代码块收缩 -->
-<script type="text/javascript" src="/source/codeBlock/codeShrink.js"></script>
-<!-- 代码块折行 -->
-<style type="text/css">
-  code[class*="language-"],
-  pre[class*="language-"] {
-    white-space: pre !important;
-  }
-</style>
+<script type="text/javascript" src="/js/mouse.js"></script>
     
 
     
@@ -1018,6 +1003,12 @@
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
 <script src="/js/sakura.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-vue"></script>
+<script>
+  hljs.registerLanguage("vue", window.hljsDefineVue);
+  hljs.initHighlightingOnLoad();
+</script>
 <!-- hexo injector body_end start -->
   <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
   <script data-pjax>

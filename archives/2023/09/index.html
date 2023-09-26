@@ -413,6 +413,12 @@
     <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
   </noscript>
 <script src="/js/sakura.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-vue"></script>
+<script>
+  hljs.registerLanguage("vue", window.hljsDefineVue);
+  hljs.initHighlightingOnLoad();
+</script>
 <!-- hexo injector body_end start -->
   <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
   <script data-pjax>
