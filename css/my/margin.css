@@ -1,4 +1,7 @@
 .page-content img,
 .post-content img {
-    margin-bottom: 30px;
+  padding-bottom: 30px;
+  clear: both;
+  display: block;
+  margin: auto;
 }
