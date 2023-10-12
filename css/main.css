@@ -733,7 +733,7 @@ sup > a::before,
   padding-left: 1rem;
 }
 .tocbot-list a {
-  font-size: 0.95rem;
+  font-size: 0.75rem;
 }
 .tocbot-link {
   color: var(--text-color);
