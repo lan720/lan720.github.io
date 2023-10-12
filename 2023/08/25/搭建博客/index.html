@@ -271,10 +271,12 @@
       
 
 <div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-3">
+  <div class="row nomargin-x" style="display: flex;flex-direction: row;
+    justify-content: space-between;flex-wrap: nowrap;">
+    <div class="side-col d-lg-block col-lg-3" style="width:20%;">
+      <!-- < class="side-col d-none d-lg-block col-lg-3"> -->
       
-  <aside class="sidebar" style="padding-left: 2rem; margin-right: -1rem">
+  <aside class="sidebar"">
     <div id="toc">
   <p class="toc-header">
     <i class="iconfont icon-list"></i>
@@ -290,9 +292,9 @@
 
     </div>
 
-    <div class="col-lg-7 nopadding-x-md">
+    <div class="col-lg-7 nopadding-x-md" style="padding-right: 0;">
       <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
+        <div id="board" style="width: 90%;">
           <article class="post-content mx-auto">
             <h1 id="seo-header">二.搭建博客</h1>
             
