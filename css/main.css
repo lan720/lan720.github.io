@@ -24,17 +24,17 @@ a {
   background: #8deeee;
 }
 figure.highlight {
-  background: #e6ebf1;
+  background: #f4ede4;
   border-radius: 0.5rem;
 }
 figure.highlight table {
   border-radius: 0 0 0.5rem 0.5rem;
 }
-figure.highlight .fas.fa-angle-down {
+figure.highlight .iconfont.el-icon-vuewindow-down {
   transform: none;
   transition: transform 0.2s ease-in-out;
 }
-figure.highlight .fas.fa-angle-down.collapsed {
+figure.highlight .iconfont.el-icon-vuewindow-down.collapsed {
   transform: rotate(-90deg);
 }
 figure.highlight > i {
@@ -1558,8 +1558,8 @@ hr,
 .post-content,
 post-custom {
   box-sizing: border-box;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 @media (max-width: 767px) {
   .post-content,

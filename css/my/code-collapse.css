@@ -1,15 +1,15 @@
 figure.highlight {
-  background: #e6ebf1;
+  background: #f4ede4;
   border-radius: 0.5rem;
 }
 figure.highlight table {
   border-radius: 0 0 0.5rem 0.5rem;
 }
-figure.highlight .fas.fa-angle-down {
+figure.highlight .iconfont.el-icon-vuewindow-down {
   transform: none;
   transition: transform 0.2s ease-in-out;
 }
-figure.highlight .fas.fa-angle-down.collapsed {
+figure.highlight .iconfont.el-icon-vuewindow-down.collapsed {
   transform: rotate(-90deg);
 }
 figure.highlight > i {
