@@ -1,3 +1,12 @@
+.tocbot-list a {
+  font-size: 0.75rem !important;
+}
+.toc-list-item {
+  white-space: wrap !important;
+}
+.toc-body ol {
+  padding-inline-start: 0.6rem !important;
+}
 body {
   cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur"), auto;
 }
@@ -13,6 +22,38 @@ a {
 }
 ::selection {
   background: #8deeee;
+}
+figure.highlight {
+  background: #e6ebf1;
+  border-radius: 0.5rem;
+}
+figure.highlight table {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+figure.highlight .fas.fa-angle-down {
+  transform: none;
+  transition: transform 0.2s ease-in-out;
+}
+figure.highlight .fas.fa-angle-down.collapsed {
+  transform: rotate(-90deg);
+}
+figure.highlight > i {
+  color: #777;
+  margin-left: 10px;
+  line-height: 2rem;
+}
+figure.highlight > span {
+  color: #777;
+  margin-left: 10px;
+  font-weight: bold;
+}
+figure.highlight td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.footer-inner {
+  background-color: #e0ffff;
 }
 .anchorjs-link {
   text-decoration: none !important;
@@ -703,6 +744,9 @@ sup > a::before,
 #local-search-result .search-word {
   color: #ff4500;
 }
+#toc {
+  visibility: hidden;
+}
 .toc-header {
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -733,7 +777,7 @@ sup > a::before,
   padding-left: 1rem;
 }
 .tocbot-list a {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 .tocbot-link {
   color: var(--text-color);
