@@ -52,6 +52,9 @@ figure.highlight td:first-child {
   left: 0;
   z-index: 1;
 }
+.navbar.scrolling-navbar.top-nav-collapse {
+  background-color: #add8e6;
+}
 .footer-inner {
   background-color: #e0ffff;
 }
@@ -349,6 +352,11 @@ sup > a::before,
 }
 .navbar .navbar-brand {
   color: var(--navbar-text-color);
+}
+@media (min-width: 992px) {
+  .navbar .weather-plugin {
+    display: block;
+  }
 }
 .navbar .navbar-toggler .animated-icon span {
   background-color: var(--navbar-text-color);

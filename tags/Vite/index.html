@@ -92,12 +92,47 @@
     <a class="navbar-brand" href="/">
       <strong>兰&#39;s blog</strong>
     </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
+    <div style="display: flex;align-items: flex-end;"> 
+      <p style="margin-bottom:0;color: white;font-size: 17px;">
+        2023年
+        10月
+        16日
+      </p>
+      <span class="weather-plugin">
+        <div id="he-plugin-simple"></div>
+      </span>
+      <script>
+        WIDGET = {
+          "CONFIG": {
+            "modules": "012",
+            "background": "5",
+            "tmpColor": "FFFFFF",
+            "tmpSize": "16",
+            "cityColor": "FFFFFF",
+            "citySize": "16",
+            "aqiColor": "FFFFFF",
+            "aqiSize": "16",
+            "weatherIconSize": "24",
+            "alertIconSize": "18",
+            // "padding": "10px 10px 10px 10px",
+            "shadow": "0",
+            "language": "auto",
+            "borderRadius": "5",
+            "fixed": "false",
+            "vertical": "top",
+            "horizontal": "left",
+            "key": "9cf07a14c8a74c4198ee7f49b868e0c8"
+          }
+        }
+      </script>
+      <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+      <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="animated-icon"><span></span><span></span><span></span></div>
+      </button>
+    </div>
+   
 
     <!-- Collapsible content -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -182,6 +217,7 @@
     </div>
   </div>
 </nav>
+
 
   
 
