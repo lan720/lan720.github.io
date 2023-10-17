@@ -4,9 +4,6 @@
 .toc-list-item {
   white-space: wrap !important;
 }
-.toc-body ol {
-  padding-inline-start: 0.6rem !important;
-}
 body {
   cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur"), auto;
 }
@@ -19,6 +16,53 @@ a {
   clear: both;
   display: block;
   margin: auto;
+}
+.tea {
+  font-size: 0.8125em;
+  color: #999;
+  margin-top: 10px;
+}
+.reward-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.reward-btn {
+  padding: 8px 24px;
+  font-size: 18px;
+  background-color: #e6e6fa;
+  color: #e3a850;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.reward-img-container {
+  display: none;
+  margin-top: 20px;
+/* 图片容器的透明度 */
+  opacity: 0;
+/* 过渡效果,使动画更平滑 */
+  transition: opacity 2s ease;
+}
+.reward-img {
+  width: 150px;
+  margin: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+.singleImgContainer {
+  width: 50%;
+  height: 240px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.wechatPay,
+.aliPay {
+  text-align: center;
+  font-size: 0.8125em;
+  color: #999;
 }
 ::selection {
   background: #8deeee;
@@ -772,7 +816,7 @@ sup > a::before,
 }
 .toc-body ol {
   list-style: none;
-  padding-inline-start: 1rem;
+  padding-inline-start: 0rem;
 }
 .toc-body::-webkit-scrollbar {
   display: none;
@@ -805,23 +849,24 @@ sup > a::before,
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.toc-list-item.is-active-li::before {
-  height: 1rem;
-  margin: 0.25rem 0;
-  visibility: visible;
-}
-.toc-list-item::before {
-  width: 0.15rem;
-  height: 0.2rem;
-  position: absolute;
-  left: 0.25rem;
-  content: "";
-  border-radius: 2px;
-  margin: 0.65rem 0;
-  background: var(--link-hover-color);
-  visibility: hidden;
-  transition: height 0.1s ease-in-out, margin 0.1s ease-in-out, visibility 0.1s ease-in-out;
+/*
+  &.is-active-li::before
+    height 1rem
+    margin 0.25rem 0
+    visibility visible
+
+  &::before
+    width 0.15rem
+    height 0.2rem
+    position absolute
+    left 0.25rem
+    content ""
+    border-radius 2px
+    margin 0.65rem 0
+    background var(--link-hover-color)
+    visibility hidden
+    transition height .1s ease-in-out, margin .1s ease-in-out, visibility .1s ease-in-out
+  */
 }
 .sidebar {
   position: -webkit-sticky;
@@ -878,16 +923,16 @@ img[lazyload] {
   text-align: right;
 }
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-  background-color: #ff0;
+  width: 10px;
+  height: 10px;
+  background-color: #e0ffff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-color);
+  background-color: #ffebcd;
   border-radius: 6px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--scrollbar-hover-color);
+  background-color: #ffebcd;
 }
 ::-webkit-scrollbar-corner {
   background-color: transparent;
