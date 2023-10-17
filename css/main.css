@@ -880,6 +880,7 @@ img[lazyload] {
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
+  background-color: #ff0;
 }
 ::-webkit-scrollbar-thumb {
   background-color: var(--scrollbar-color);
