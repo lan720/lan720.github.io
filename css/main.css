@@ -12,23 +12,26 @@ a {
 }
 .page-content img,
 .post-content img {
+  padding-top: 30px;
   padding-bottom: 30px;
   clear: both;
   display: block;
   margin: auto;
-}
-.tea {
-  font-size: 0.8125em;
-  color: #999;
-  margin-top: 10px;
 }
 .reward-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+/* 单个图片的容器 */
+/* 微信支付和支付宝支付的文字样式 */
 }
-.reward-btn {
+.reward-container .tea {
+  font-size: 0.8125em;
+  color: #999;
+  margin-top: 10px;
+}
+.reward-container .reward-btn {
   padding: 8px 24px;
   font-size: 18px;
   background-color: #e6e6fa;
@@ -37,7 +40,7 @@ a {
   cursor: pointer;
   border-radius: 10px;
 }
-.reward-img-container {
+.reward-container .reward-img-container {
   display: none;
   margin-top: 20px;
 /* 图片容器的透明度 */
@@ -45,21 +48,20 @@ a {
 /* 过渡效果,使动画更平滑 */
   transition: opacity 2s ease;
 }
-.reward-img {
+.reward-container .reward-img {
   width: 150px;
   margin: 10px;
   border: 1px dashed #ccc;
   border-radius: 4px;
-  padding: 10px;
 }
-.singleImgContainer {
+.reward-container .singleImgContainer {
   width: 50%;
-  height: 240px;
+  height: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
-.wechatPay,
-.aliPay {
+.reward-container .wechatPay,
+.reward-container .aliPay {
   text-align: center;
   font-size: 0.8125em;
   color: #999;
@@ -1587,6 +1589,9 @@ figure.highlight td.code > pre {
 .markdown-body details summary {
   outline: none;
 }
+.markdown-body img {
+  background-color: #f0ffff;
+}
 hr,
 .markdown-body hr {
   background-color: initial;
@@ -2048,7 +2053,7 @@ input[type=checkbox] {
 }
 .about-avatar {
   position: relative;
-  margin: -8rem auto 1rem;
+  margin: -6rem auto 1rem;
   width: 10rem;
   height: 10rem;
   z-index: 3;
@@ -2062,7 +2067,7 @@ input[type=checkbox] {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 .about-info > div {
-  margin-bottom: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 .about-name {
   font-size: 1.75rem;

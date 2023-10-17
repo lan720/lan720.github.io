@@ -1,5 +1,6 @@
 .page-content img,
 .post-content img {
+  padding-top: 30px;
   padding-bottom: 30px;
   clear: both;
   display: block;
