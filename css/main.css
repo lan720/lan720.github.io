@@ -137,9 +137,11 @@ h6:hover > .anchorjs-link {
 @media (max-width: 100vh) {
   .header-inner {
     max-height: 100vw;
+    position: relative;
   }
   #board {
     margin-top: -1rem !important;
+    width: 83% !important;
   }
 }
 @media (max-width: 79.99vh) {
