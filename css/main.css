@@ -141,7 +141,6 @@ h6:hover > .anchorjs-link {
   }
   #board {
     margin-top: -1rem !important;
-    width: 83% !important;
   }
 }
 @media (max-width: 79.99vh) {
@@ -878,6 +877,7 @@ sup > a::before,
   top: 2rem;
   padding: 3rem 0;
   width: 100%;
+  padding-left: 5px;
 }
 html {
   font-size: 18px;
