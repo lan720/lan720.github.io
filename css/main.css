@@ -6,15 +6,15 @@
 }
 @font-face {
   font-family: 'KaiTi';
-  src: url("./ttf/KaiTi.ttf");
+  src: url("./mycustom/ttf/KaiTi.ttf");
 }
 @font-face {
   font-family: 'Times New Roman';
-  src: url("./ttf/Times New Roman.ttf");
+  src: url("./mycustom/ttf/Times New Roman.ttf");
 }
 html,
 body {
-  font-family: 'Times New Roman,KaiTi' !important;
+  font-family: 'Times New Roman', KaiTi !important;
 }
 body {
   cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur"), auto;
