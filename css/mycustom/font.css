@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'KaiTi';
+  src: url("./ttf/KaiTi.ttf");
+}
+@font-face {
+  font-family: 'Times New Roman';
+  src: url("./ttf/Times New Roman.ttf");
+}
+html,
+body {
+  font-family: 'Times New Roman,KaiTi' !important;
+}
