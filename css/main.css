@@ -16,6 +16,9 @@ html,
 body {
   font-family: 'Times New Roman', KaiTi !important;
 }
+.markdown-body {
+  font-family: 'Times New Roman', KaiTi !important;
+}
 body {
   cursor: url("https://cdn.jsdelivr.net/gh/kaix2301/pictures/img202201071208706.cur"), auto;
 }
