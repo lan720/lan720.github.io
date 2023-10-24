@@ -5,11 +5,11 @@ figure.highlight {
 figure.highlight table {
   border-radius: 0 0 0.5rem 0.5rem;
 }
-figure.highlight .iconfont.el-icon-vuewindow-down {
+figure.highlight .iconfont.icon-window-down {
   transform: none;
   transition: transform 0.2s ease-in-out;
 }
-figure.highlight .iconfont.el-icon-vuewindow-down.collapsed {
+figure.highlight .iconfont.icon-window-down.collapsed {
   transform: rotate(-90deg);
 }
 figure.highlight > i {

@@ -91,11 +91,11 @@ figure.highlight {
 figure.highlight table {
   border-radius: 0 0 0.5rem 0.5rem;
 }
-figure.highlight .iconfont.el-icon-vuewindow-down {
+figure.highlight .iconfont.icon-window-down {
   transform: none;
   transition: transform 0.2s ease-in-out;
 }
-figure.highlight .iconfont.el-icon-vuewindow-down.collapsed {
+figure.highlight .iconfont.icon-window-down.collapsed {
   transform: rotate(-90deg);
 }
 figure.highlight > i {
@@ -960,7 +960,7 @@ label {
   margin-bottom: 0;
 }
 i.iconfont {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1;
 }
 :root {
@@ -1026,6 +1026,7 @@ i.iconfont {
 }
 @media not print {
   [data-user-color-scheme="dark"] {
+    --body-bg-color: #000 !important;
     --body-bg-color: #181c27;
     --board-bg-color: #252d38;
     --text-color: #c4c6c9;
