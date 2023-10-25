@@ -113,9 +113,6 @@ figure.highlight td:first-child {
   left: 0;
   z-index: 1;
 }
-.navbar.scrolling-navbar.top-nav-collapse {
-  background-color: #add8e6;
-}
 .anchorjs-link {
   text-decoration: none !important;
   transition: opacity 0.2s ease-in-out;
@@ -941,13 +938,9 @@ img[lazyload] {
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
-  background-color: #e0ffff;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: #ffebcd;
   border-radius: 6px;
-}
-::-webkit-scrollbar-thumb:hover {
   background-color: #ffebcd;
 }
 ::-webkit-scrollbar-corner {
@@ -975,7 +968,7 @@ i.iconfont {
   --navbar-bg-color: #2f4154;
   --navbar-text-color: #fff;
   --subtitle-color: #fff;
-  --scrollbar-color: #e0ffff;
+  --scrollbar-color: lightblue;
   --scrollbar-hover-color: #ffebcd;
   --button-bg-color: transparent;
   --button-hover-bg-color: #f2f3f5;
@@ -988,7 +981,7 @@ i.iconfont {
   }
   :root:not([data-user-color-scheme]) {
     --body-bg-color: black;
-    --board-bg-color: gray;
+    --board-bg-color: #354f69;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
@@ -1000,7 +993,7 @@ i.iconfont {
     --navbar-bg-color: #1f3144;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
-    --scrollbar-color: #687582;
+    --scrollbar-color: black;
     --scrollbar-hover-color: #9da8b3;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
@@ -1024,7 +1017,7 @@ i.iconfont {
 @media not print {
   [data-user-color-scheme="dark"] {
     --body-bg-color: black;
-    --board-bg-color: gray;
+    --board-bg-color: #354f69;
     --text-color: #c4c6c9;
     --sec-text-color: #a7a9ad;
     --post-text-color: #c4c6c9;
@@ -1036,7 +1029,7 @@ i.iconfont {
     --navbar-bg-color: #1f3144;
     --navbar-text-color: #d0d0d0;
     --subtitle-color: #d0d0d0;
-    --scrollbar-color: #687582;
+    --scrollbar-color: black;
     --scrollbar-hover-color: #9da8b3;
     --button-bg-color: transparent;
     --button-hover-bg-color: #46647e;
