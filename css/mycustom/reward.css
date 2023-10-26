@@ -22,7 +22,6 @@
 }
 .reward-container .reward-img-container {
   display: none;
-  margin-top: 20px;
 /* 图片容器的透明度 */
   opacity: 0;
 /* 过渡效果,使动画更平滑 */
@@ -30,8 +29,6 @@
 }
 .reward-container .reward-img {
   width: 150px;
-  margin: 10px;
-  border: 1px dashed #ccc;
   border-radius: 4px;
 }
 .reward-container .singleImgContainer {
@@ -45,4 +42,6 @@
   text-align: center;
   font-size: 0.8125em;
   color: #999;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
