@@ -13,3 +13,16 @@ body {
 .markdown-body {
   font-family: 'Times New Roman', KaiTi !important;
 }
+#he-plugin-simple {
+  font-family: 'Times New Roman', KaiTi !important;
+}
+#he-plugin-simple .s-sticker {
+  display: flex;
+  align-items: center;
+}
+#he-plugin-simple .s-sticker .s-sticker-tmp.module {
+  font-size: 17px !important;
+}
+#he-plugin-simple .s-sticker .s-sticker-city.module {
+  font-size: 17px !important;
+}
