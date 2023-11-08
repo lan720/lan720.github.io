@@ -1373,7 +1373,7 @@ i.iconfont {
   color: var(--sec-text-color);
 }
 .index-btm a {
-  color: var(--sec-text-color);
+  color: #00ced1;
 }
 .index-excerpt {
   color: var(--sec-text-color);
