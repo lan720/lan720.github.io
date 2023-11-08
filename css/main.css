@@ -898,7 +898,7 @@ sup > a::before,
   top: 2rem;
   padding: 3rem 0;
   width: 100%;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 html {
   font-size: 18px;
@@ -1096,7 +1096,6 @@ i.iconfont {
 @media (max-width: 767px) {
   .nopadding-x-md {
     padding-left: 0 !important;
-    padding-right: 0 !important;
   }
 }
 .flex-center {
@@ -1679,6 +1678,7 @@ post-custom {
   display: flex;
   flex-wrap: wrap;
   font-size: 0.9rem;
+  gap: 5px;
 }
 .post-meta > *:not(.hover-with-bg) {
   margin-right: 0.2rem;
