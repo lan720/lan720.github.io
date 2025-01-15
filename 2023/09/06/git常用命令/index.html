@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lan720.github.io/cover/git.png">
 <meta property="article:published_time" content="2023-09-06T09:23:51.000Z">
-<meta property="article:modified_time" content="2024-05-09T02:18:20.773Z">
+<meta property="article:modified_time" content="2025-01-15T07:58:12.722Z">
 <meta property="article:author" content="lan720">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary_large_image">
@@ -108,7 +108,7 @@
     </a>
     <div style="display: flex;align-items: center;"> 
       <p style="margin-bottom:0;color: white;font-size: 17px;">
-        2024年05月09日
+        2025年01月15日
       </p>
       <span class="weather-plugin">
         <div id="he-plugin-simple"></div>
@@ -265,7 +265,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-tongjitu"></i>
         
-          2.4k 字
+          3.2k 字
         
       </span>
     
@@ -276,7 +276,7 @@
         
         
         
-          20 分钟
+          27 分钟
         
       </span>
     
@@ -347,7 +347,7 @@
             <h1 id="seo-header">四.git常用命令</h1>
             
             <p class="note note-info">
-                本文最后更新于：2024年5月9日 10:18  
+                本文最后更新于：2025年1月15日 15:58  
             </p>
              
             <div class="markdown-body">
@@ -431,6 +431,37 @@
 <li>git push</li>
 </ol>
 <p><code>feat</code> 是 “Feature”的缩写，代表新的功能特性。当你想要添加一个新的功能特性，或是改进现有的功能特性时，应当使用 <code>feat</code> 这个前缀来描述你的提交。</p>
+<hr>
+<p>git修改历史commit的message：</p>
+<ol>
+<li><p>git log：找到之前的commit message之后的id：</p>
+<img src="image-20250115151442821.png" srcset="/img/loading.gif" lazyload  style="zoom:50%;" />
+
+<p>按q退出</p>
+</li>
+<li><p>git rebase -i 70614d8cce961d99ac21fcd19594084b81cb69cc：进入vim界面，按i进入编辑，将pick修改为reword。</p>
+<ol>
+<li>pick：保留该 commit</li>
+<li>reword：保留该 commit，但我需要修改该commit的 Message</li>
+<li>edit：保留该 commit, 但我要停下来修改该提交(包括修改文件)</li>
+<li>squash：将该 commit 和前一个 commit 合并</li>
+<li>fixup：将该 commit 和前一个 commit 合并，但我不要保留该提交的注释信息</li>
+<li>exec：执行 shell 命令</li>
+<li>drop：丢弃这个 commit</li>
+</ol>
+<img src="image-20250115151711868.png" srcset="/img/loading.gif" lazyload style="zoom:50%;" />
+
+<p>按Esc退出编辑，输入:wq保存并退出，之后就会进入message的编辑界面。message修改之后按Esc退出编辑，输入:wq保存并退出：</p>
+<img src="image-20250115152002712.png" srcset="/img/loading.gif" lazyload style="zoom:50%;" />
+</li>
+<li><p>git log看到已经修改成功</p>
+</li>
+<li><p>此时git push出现报错：</p>
+<img src="image-20250115152253597.png" srcset="/img/loading.gif" lazyload style="zoom:50%;" />
+
+<p>使用覆盖提交的方式：git push -f origin</p>
+<img src="image-20250115155337235.png" srcset="/img/loading.gif" lazyload style="zoom:50%;" /></li>
+</ol>
 <p><a target="_blank" rel="noopener" href="https://ruanyifeng.com/blog/2020/04/git-cherry-pick.html">https://ruanyifeng.com/blog/2020/04/git-cherry-pick.html</a></p>
 <h1 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h1><p>Github仓库导入到Gitee：</p>
 <img src="image-20231106151706877.png" srcset="/img/loading.gif" lazyload alt="image-20231106151706877" style="zoom:50%;" />
@@ -446,23 +477,16 @@
 <p class="note note-success" style="border-left: 4px solid #42b983;padding: 10px 15px;color: #777;background-color: rgba(66, 185, 131, .1);">OpenSSL SSL_read: Connection was reset, errno 10054</p>
 
 <p> 解决方法：</p>
-<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-41by1alvymgzbo" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-41by1alvymgzbo"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global http.sslVerify <span class="hljs-string">&quot;false&quot;</span><br>git config --global https.sslVerify <span class="hljs-string">&quot;false&quot;</span><br></code></pre></td></tr></table></div></figure>
+<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-2qcrxxm5xme8ih" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-2qcrxxm5xme8ih"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global http.sslVerify <span class="hljs-string">&quot;false&quot;</span><br>git config --global https.sslVerify <span class="hljs-string">&quot;false&quot;</span><br></code></pre></td></tr></table></div></figure>
 
 <hr>
-<p><code>fatal: unable to access &#39;https://github.com/Chanzhaoyu/chatgpt-web.git/&#39;: Failed to connect to github.com port 443 after 21343 ms: Timed out</code>：</p>
+<p>开了代理后报错<code>fatal: unable to access &#39;https://github.com/Chanzhaoyu/chatgpt-web.git/&#39;: Failed to connect to github.com port 443 after 21343 ms: Timed out</code>：</p>
 <img src="image-20231123171826860.png" srcset="/img/loading.gif" lazyload alt="image-20231123171826860" style="zoom:50%;" />
 
-<p>打开使用代码服务器：</p>
-<img src="image-20231123171855262.png" srcset="/img/loading.gif" lazyload alt="image-20231123171855262" style="zoom:40%;" />
+<img src="image-20240509103637112.png" srcset="/img/loading.gif" lazyload alt="image-20240509103637112" style="zoom:40%;" />
 
-<p>查看原代理设置：</p>
-<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-cqo109lvymgzbo" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-cqo109lvymgzbo"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --get http.proxy<br>git config --get https.proxy<br></code></pre></td></tr></table></div></figure>
-
-<p> 取消原代理设置：</p>
-<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-yyiguulvymgzbo" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-yyiguulvymgzbo"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global --<span class="hljs-built_in">unset</span> http.proxy<br>git config --global --<span class="hljs-built_in">unset</span> https.proxy<br></code></pre></td></tr></table></div></figure>
-
-<p>刷新 DNS 解析缓存：</p>
-<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-rshcfllvymgzbo" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-rshcfllvymgzbo"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">ipconfig /flushdns<br></code></pre></td></tr></table></div></figure>
+<p>记录下当前系统代理的 IP 地址和端口号：127.0.0.1:7890</p>
+<figure class="highlight bash"><i class="iconfont icon-window-down" type="button" data-toggle="collapse" data-target="#collapse-thbx1xm5xme8ih" style="font-size:1.5em;"></i><div class="collapse show" id="collapse-thbx1xm5xme8ih"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">git config --global http.proxy http://127.0.0.1:7890 <br>git config --global https.proxy http://127.0.0.1:7890<br></code></pre></td></tr></table></div></figure>
 
 <hr>
 <p>.ssh文件夹位置：</p>
@@ -476,7 +500,13 @@ ssh: connect to host github.com port 22: Connection timed out`，
 <p>原因：有多个key，删除一个key后选yes</p>
 <img src="image-20240122171405992.png" srcset="/img/loading.gif" lazyload alt="image-20240122171405992" style="zoom:40%;" />
 
-<img src="image-20240122171252090.png" srcset="/img/loading.gif" lazyload alt="image-20240122171252090" style="zoom:40%;" /> 
+<img src="image-20240122171252090.png" srcset="/img/loading.gif" lazyload alt="image-20240122171252090" style="zoom:40%;" />
+
+<hr>
+<p><code>fatal: unable to access &#39;https://github.com/lan720/SEU.git/&#39;: OpenSSL SSL_connect: Connection was reset in connection to github.com:443</code>：关掉代理</p>
+<hr>
+<p><code>error: unable to rewind rpc post data - try increasing http.postBuffer error: RPC failed; curl 56 OpenSSL SSL_read: Connection was reset, errno 10054 send-pack: unexpected disconnect while reading sideband packet  </code>：git config --global http.postBuffer 524288000</p>
+ 
             </div>
             
             <hr />
@@ -547,7 +577,7 @@ ssh: connect to host github.com port 22: Connection timed out`，
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年5月9日</div>
+          <div>2025年1月15日</div>
         </div>
       
       
